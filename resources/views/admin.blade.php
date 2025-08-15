@@ -10,15 +10,15 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="{{url('css/admin.css')}}"/>
   </head>
   <body>
     <div class="container">
       <aside>
         <div class="top">
           <div class="logo">
-            <img src="./images/logo.png" alt="Logo" />
-            <h2>EGA<span class="danger">TOR</span></h2>
+            <img src="{{ url('images/bridal logo.jpeg') }}" alt="Logo" />
+            <h2>JML BRIDALS</h2>
           </div>
           <div class="close" id="close-btn">
             <span class="material-icons-sharp"> close </span>
@@ -50,6 +50,10 @@
           <a href="#">
             <span class="material-icons-sharp"> inventory </span>
             <h3>Products</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> people </span>
+            <h3>Employees</h3>
           </a>
           <a href="#">
             <span class="material-icons-sharp"> report_gmailerrorred </span>
@@ -168,11 +172,11 @@
           </div>
           <div class="profile">
             <div class="info">
-              <p>Hey, <b>Bruno</b></p>
+              <p>Hey, <b>Miriam</b></p>
               <small class="text-muted">Admin</small>
             </div>
             <div class="profile-photo">
-              <img src="./images/profile-1.jpg" alt="Profile Picture" />
+              <img src={{ url('images/profile-3.jpg') }} alt="Profile Picture" />
             </div>
           </div>
         </div>

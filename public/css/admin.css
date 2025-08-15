@@ -15,7 +15,8 @@
     --color-primary-variant: #111e88;
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
-    --color-logo: ##f6beee;
+    --color-theme: #df50c9;
+    --background-theme: #7380ec;
 
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
@@ -143,7 +144,7 @@ aside .logo img {
     height: 5rem;
 }
 aside .logo h2 {
-    color: var(--color-logo);
+    color: var(--color-theme);
 }
 aside .close {
     display: none;
@@ -159,6 +160,7 @@ aside .sidebar {
 }
 aside h3 {
     font-weight: 500;
+    color: var(--color-theme);
 }
 aside .sidebar a {
     display: flex;
@@ -201,7 +203,7 @@ aside .sidebar a:hover span {
     margin-left: 1rem;
 }
 aside .sidebar .message-count {
-    background: var(--color-danger);
+    background: var(--background-theme);
     color: var(--color-white);
     padding: 2px 10px;
     font-size: 11px;
