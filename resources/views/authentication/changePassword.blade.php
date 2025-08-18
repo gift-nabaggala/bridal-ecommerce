@@ -28,56 +28,72 @@
           </a>
         </div>
       </nav>
-
-      <!-- Login Form -->
-      <section class="login-form">
-        <div class="card">
-          <h1>Login</h1>
+<!-- Change Password Form -->
+      <section class="change-password-form">
+        <div class="card" id="change_password_card">
+          <h1>Change Password</h1>
           <div class="input-group">
-            <div class="username-email-input">
+            <div class="password-input">
               <div class="input-box">
                 <input
-                  type="text"
-                  id="username_email"
+                  type="password"
+                  id="current_password"
                   class="input"
                   placeholder=" "
                 />
-                <label for="username_email" class="input-label"
-                  >Username or Email</label
+                <label for="current_password" class="input-label"
+                  >Current Password</label
                 >
               </div>
               <span>
                 <p class="mark">!</p>
-                <p class="error-text" id="username_email_error"></p>
+                <p class="error-text" id="current_password_error"></p>
               </span>
             </div>
             <div class="password-input">
               <div class="input-box">
                 <input
                   type="password"
-                  id="password"
+                  id="change_password"
                   class="input"
                   placeholder=" "
                 />
-                <label for="password" class="input-label">Password</label>
+                <label for="change_password" class="input-label"
+                  >New Password</label
+                >
               </div>
               <span>
                 <p class="mark">!</p>
-                <p class="error-text" id="password_error"></p>
+                <p class="error-text" id="change_password_error"></p>
+              </span>
+            </div>
+            <div class="password-input">
+              <div class="input-box">
+                <input
+                  type="password"
+                  id="conchange_password"
+                  class="input"
+                  placeholder=" "
+                />
+                <label for="conchange_password" class="input-label"
+                  >Confirm New Password</label
+                >
+              </div>
+              <span>
+                <p class="mark">!</p>
+                <p class="error-text" id="conchange_password_error"></p>
               </span>
             </div>
           </div>
-          <div class="check-element">
-            <input type="checkbox" name="remember-check" id="remember_check" />
-            <label for="remember_check">Remember me</label>
+          <div class="btn-group">
+            <button type="submit" id="change_submit" class="btn">SUBMIT</button>
+            <button type="submit" id="change_cancel" class="cancel-btn btn">
+              CANCEL
+            </button>
           </div>
-          <button type="submit" id="login_submit" class="btn">LOGIN</button>
-        </div>
-        <div class="under-card">
-          <p>Don't have an account?</p>
-          <button id="to_signup">Create</button>
         </div>
       </section>
       </div>
       </body>
       </html>
+      

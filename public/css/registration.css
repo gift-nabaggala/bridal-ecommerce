@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-color: #ff8a65;
+    --primary-color: #df50c9;
     --secondary-color: #ff7043;
     --bg: #f5f7f8;
     --card-bg: #eceff1;
@@ -17,7 +17,6 @@
     --button-color-hover: #c4ced4;
     --red: #f44336;
     --background-theme: #7380ec;
-    --color-theme: #df50c9;
 }
 
 .dark-mode {
@@ -40,6 +39,11 @@
 body {
     background-color: var(--bg);
     overflow-x: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
 }
 
 /* Navbar */
@@ -67,13 +71,31 @@ nav .link-group {
 nav .link-group a {
     text-decoration: none;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--primary-text-color);
 }
 
 nav .link-group a:hover {
     color: var(--secondary-text-color);
     transition: color 0.3s;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.logo img {
+    width: 3rem;
+    height: 4rem;
+}
+.logo h2 {
+    font-size: 1rem;
+    color: var(--primary-color);
 }
 
 /* Reusable Style */
@@ -252,7 +274,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .btn:hover {
-    background-color: var(--color-theme);
+    background-color: var(--primary-color);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -297,7 +319,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .under-card button:hover {
-    color: var(--secondary-color);
+    color: var(--background-theme);
 }
 
 /* Change Password card */
